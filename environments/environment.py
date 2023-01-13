@@ -1,11 +1,12 @@
-import traci
 import numpy as np
+import traci
+
 from utils.net_scrape import *
 
 
 # Base class
 class Environment:
-    def __init__(self, constants, device, agent_ID, eval_agent, net_path, vis=False):
+    def __init__(self, constants, device, agent_ID, eval_agent, net_path, vis=True):
         self.constants = constants
         self.device = device
         self.agent_ID = agent_ID

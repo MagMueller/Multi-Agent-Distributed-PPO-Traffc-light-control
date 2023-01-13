@@ -34,7 +34,7 @@ def get_env_name(constants):
     return '{}_{}_intersections'.format(shape[0], shape[1])
 
 class IntersectionsEnv(Environment):
-    def __init__(self, constants, device, agent_ID, eval_agent, net_path, vis=False):
+    def __init__(self, constants, device, agent_ID, eval_agent, net_path, vis=True):
         super(IntersectionsEnv, self).__init__(constants, device, agent_ID, eval_agent, net_path, vis)
         # For file names
         self.env_name = get_env_name(constants)
